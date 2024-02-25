@@ -275,6 +275,31 @@ plt.show()
 # plt.set_yli1m(-10, 10)  # Ajusta los límites en el eje Y
 
 
+# fig0, axes0 = plt.subplots(nrows=1, ncols=2, figsize=(14, 4))
+
+# axes0[0].plot(t_aux, yaw_b, label='Yaw nivel bajo')
+# axes0[0].plot(t_aux, yaw_m, label='Yaw nivel medio')
+# axes0[0].plot(t_aux, yaw_g, label='Yaw nivel alto')
+# axes0[0].set_xlabel('Tiempo [s]')
+# axes0[0].set_ylabel('Ángulos de Euler [°]')
+# axes0[0].legend()
+# axes0[0].grid()
+# #axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
+
+# axes0[1].plot(t_aux, yaw_b, label='Yaw nivel bajo')
+# axes0[1].plot(t_aux, yaw_m, label='Yaw nivel medio')
+# axes0[1].plot(t_aux, yaw_g, label='Yaw nivel alto')
+# axes0[1].set_xlabel('Tiempo [s]')
+# axes0[1].set_ylabel('Ángulos de Euler [°]')
+# # axes0[1].legend()
+# axes0[1].grid()
+# axes0[1].set_ylim(-20, -5)  # Ajusta los límites en el eje Y
+# axes0[1].set_xlim(150000, 400000)  # Ajusta los límites en el eje Y
+
+# plt.tight_layout()
+# plt.show()
+
+
 fig0, axes0 = plt.subplots(nrows=1, ncols=3, figsize=(16, 4))
 
 axes0[0].plot(t_aux, q0_rot, label='q0 PD_NL')
@@ -339,71 +364,71 @@ plt.show()
 # plt.show()
 
 
-fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
+# fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
 
-axes0[0].plot(t_aux, Roll_low_pass, label='Roll')
-axes0[0].set_xlabel('Tiempo [s]')
-axes0[0].set_ylabel('Ángulos de Euler [°]')
-axes0[0].legend()
-axes0[0].grid()
-#axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
+# axes0[0].plot(t_aux, Roll_low_pass, label='Roll')
+# axes0[0].set_xlabel('Tiempo [s]')
+# axes0[0].set_ylabel('Ángulos de Euler [°]')
+# axes0[0].legend()
+# axes0[0].grid()
+# #axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
 
-axes0[1].plot(t_aux, Roll_low_pass, label='Roll')
-axes0[1].plot(t_aux, settling_error_sup_R , label='SET_sup_roll')
-axes0[1].plot(t_aux, settling_error_inf_R , label='SET_inf_roll')
-axes0[1].set_xlabel('Tiempo [s]')
-axes0[1].set_ylabel('Ángulos de Euler [°]')
-axes0[1].legend()
-# axes0[1].set_title('Filtros pasa bajo')
-axes0[1].grid()
-axes0[1].set_ylim(-25,0)  # Ajusta los límites en el eje Y
+# axes0[1].plot(t_aux, Roll_low_pass, label='Roll')
+# axes0[1].plot(t_aux, settling_error_sup_R , label='SET_sup_roll')
+# axes0[1].plot(t_aux, settling_error_inf_R , label='SET_inf_roll')
+# axes0[1].set_xlabel('Tiempo [s]')
+# axes0[1].set_ylabel('Ángulos de Euler [°]')
+# axes0[1].legend()
+# # axes0[1].set_title('Filtros pasa bajo')
+# axes0[1].grid()
+# axes0[1].set_ylim(-25,0)  # Ajusta los límites en el eje Y
 
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
 
-fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
+# fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
 
-axes0[0].plot(t_aux, Pitch_low_pass, label='Pitch')
-axes0[0].set_xlabel('Tiempo [s]')
-axes0[0].set_ylabel('Ángulos de Euler [°]')
-axes0[0].legend()
-axes0[0].grid()
-#axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
+# axes0[0].plot(t_aux, Pitch_low_pass, label='Pitch')
+# axes0[0].set_xlabel('Tiempo [s]')
+# axes0[0].set_ylabel('Ángulos de Euler [°]')
+# axes0[0].legend()
+# axes0[0].grid()
+# #axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
 
-axes0[1].plot(t_aux, Pitch_low_pass, label='Pitch')
-axes0[1].plot(t_aux, settling_error_sup_P , label='SET_sup_pitch')
-axes0[1].plot(t_aux, settling_error_inf_P , label='SET_inf_pitch')
-axes0[1].set_xlabel('Tiempo [s]')
-axes0[1].set_ylabel('Ángulos de Euler [°]')
-axes0[1].legend()
-# axes0[1].set_title('Filtros pasa bajo')
-axes0[1].grid()
-axes0[1].set_ylim(-10,10)  # Ajusta los límites en el eje Y
+# axes0[1].plot(t_aux, Pitch_low_pass, label='Pitch')
+# axes0[1].plot(t_aux, settling_error_sup_P , label='SET_sup_pitch')
+# axes0[1].plot(t_aux, settling_error_inf_P , label='SET_inf_pitch')
+# axes0[1].set_xlabel('Tiempo [s]')
+# axes0[1].set_ylabel('Ángulos de Euler [°]')
+# axes0[1].legend()
+# # axes0[1].set_title('Filtros pasa bajo')
+# axes0[1].grid()
+# axes0[1].set_ylim(-10,10)  # Ajusta los límites en el eje Y
 
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
 
-fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
+# fig0, axes0 = plt.subplots(nrows=2, ncols=1, figsize=(7, 7))
 
-axes0[0].plot(t_aux, Yaw_low_pass, label='Yaw')
-axes0[0].set_xlabel('Tiempo [s]')
-axes0[0].set_ylabel('Ángulos de Euler [°]')
-axes0[0].legend()
-axes0[0].grid()
-#axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
+# axes0[0].plot(t_aux, Yaw_low_pass, label='Yaw')
+# axes0[0].set_xlabel('Tiempo [s]')
+# axes0[0].set_ylabel('Ángulos de Euler [°]')
+# axes0[0].legend()
+# axes0[0].grid()
+# #axes0[0].set_ylim(-1, 1)  # Ajusta los límites en el eje Y
 
-axes0[1].plot(t_aux, Yaw_low_pass, label='Yaw')
-axes0[1].plot(t_aux, settling_error_sup_Y , label='SET_sup_yaw')
-axes0[1].plot(t_aux, settling_error_inf_Y , label='SET_inf_yaw')
-axes0[1].set_xlabel('Tiempo [s]')
-axes0[1].set_ylabel('Ángulos de Euler [°]')
-axes0[1].legend()
-# axes0[1].set_title('Filtros pasa bajo')
-axes0[1].grid()
-axes0[1].set_ylim(-25,0)  # Ajusta los límites en el eje Y
+# axes0[1].plot(t_aux, Yaw_low_pass, label='Yaw')
+# axes0[1].plot(t_aux, settling_error_sup_Y , label='SET_sup_yaw')
+# axes0[1].plot(t_aux, settling_error_inf_Y , label='SET_inf_yaw')
+# axes0[1].set_xlabel('Tiempo [s]')
+# axes0[1].set_ylabel('Ángulos de Euler [°]')
+# axes0[1].legend()
+# # axes0[1].set_title('Filtros pasa bajo')
+# axes0[1].grid()
+# axes0[1].set_ylim(-25,0)  # Ajusta los límites en el eje Y
 
-plt.tight_layout()
-plt.show()
+# plt.tight_layout()
+# plt.show()
 
 # plt.figure(figsize=(12, 6))
 # plt.plot(t_aux, Roll_low_pass, label='Roll')
@@ -508,3 +533,4 @@ plt.show()
 # plt.legend()
 # plt.grid(True)
 # plt.show()
+
