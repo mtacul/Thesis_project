@@ -41,7 +41,7 @@ https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html
 
 # functions.py
 ## needed libraries
-from skyfield.positionlib import Geocentric
+from skyfield.positionlib import Geocentric \n
 import numpy as np
 from datetime import datetime
 import math
