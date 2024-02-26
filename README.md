@@ -51,4 +51,4 @@ import math
 
 from scipy.signal import butter, lfilter  
 
-## functions used in this work
+## functions created for this work
