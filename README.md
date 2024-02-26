@@ -40,11 +40,15 @@ Another module *load_coeffs* can be used to get *g[m][n]* or *h[m][n]* same as t
 https://www.ngdc.noaa.gov/IAGA/vmod/igrf.html
 
 # functions.py
-## needed libraries
-from skyfield.positionlib import Geocentric.
-import numpy as np.
-from datetime import datetime.
-import math.
-from scipy.signal import butter, lfilter.
+## needed libraries  
+from skyfield.positionlib import Geocentric  
+
+import numpy as np  
+
+from datetime import datetime  
+
+import math  
+
+from scipy.signal import butter, lfilter  
 
 ## functions used in this work
